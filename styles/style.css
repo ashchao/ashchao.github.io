@@ -1,0 +1,394 @@
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #F9F5F5;
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  padding: 84px 2em 0 2em;
+  line-height: 1.2;
+}
+
+.caseStudy {
+  padding-bottom: 0.8em;
+}
+
+h2.projectName:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 6em;
+    height: 1em;
+    background-color: #F7D794;
+    top: .5em;
+    z-index: -1;
+    left: 2em;
+}
+
+.projectName {
+  position: relative;
+  padding-bottom: 0.8em;
+  z-index: -1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+}
+
+.description {
+  padding-bottom: 0.8em;
+}
+
+.Prototype {
+  width: 10em;
+  height: 3em;
+  font-size: 1em;
+  font-weight: bold;
+}
+/* nav {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a, nav > div{
+  padding: 1.5em 2em;
+  color: black;
+  font-weight: bold;
+} */
+
+.slogan {
+  padding: 1em 0;
+}
+
+/* nav > div > a {
+  padding: 0 1em;
+  color: black;
+}
+
+nav.solid {
+  background-color: white;
+} */
+
+h1 {
+  font-size: 2em;
+  font-family: 'Oleo Script', cursive;
+}
+
+h2 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25em;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+}
+.sayHello, .Prototype {
+  background-color: #E8AEB1;
+}
+
+
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 2em;
+}
+
+header img {
+  width: 100%;
+}
+
+header div {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  top: 100%;
+  padding-top: 1em;
+
+}
+
+.workTitle {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+.allProjects{
+  display:flex;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 575px){
+
+
+}
+@media screen and (min-width: 991px){
+
+
+}
+@media screen and (min-width: 1199px){
+
+}
+
+
+nav {
+  position: fixed;
+  background-color: transparent;
+  height: 84px;
+  top: 0;
+  width: calc(100% + 1em);
+  left: -1em;
+  z-index: 1;
+}
+
+nav.solid {
+  background-color: white;
+}
+
+a{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 50px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: black;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.ashLogo {
+  position: fixed;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.ashLogo a {
+  margin-top: 9px;
+}
+
+.summary {
+  padding-top: 2em;
+}
+
+h3{
+  padding-bottom: 0.1em;
+}
+
+.sectioning {
+  padding-bottom: 1em;
+}
+
+button {
+  border: none;
+}
+
+.brandGuide {
+  width: 7em;
+  height: 3em;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #E8AEB1;
+}
+
+footer {
+  background-color: #E8AEB1;
+  padding: 1em;
+  width: 100vw;
+  margin-left: -2em;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sayHello {
+  height: 3em;
+}
+
+.workTitle {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  top: 100%;
+  padding-top: 1em;
+}
+
+@media screen and (max-width: 990px){
+.workTitle p {
+  display:none;
+}
+}
+
+.allProjects {
+  display: flex;
+  flex-direction: column;
+}
+
+.myWork{
+background-color: #76C3D2;
+padding: 0.3em;
+}
