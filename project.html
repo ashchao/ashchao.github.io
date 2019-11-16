@@ -5,37 +5,91 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- Font Awesome -->
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="styles/reset.css">
+      <link rel="stylesheet" href="styles/style.css">
+      <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+      <script src="styles/project.js" async></script>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <a href="/#/">Logo</a>
-      <a href="/work/">Work</a>
-      <a href="/about/">About</a>
-      <a href="/contact/">Contact</a>
+    <!-- <nav> -->
+      <!-- <a href="/#/">Logo</a>
+      <div>
+        <a href="/work/">Work</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </nav> -->
+
+    <div class="ashLogo">
+      <a href="index.html">
+        <svg width="50" height="41" viewBox="0 0 50 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="22" y="27" width="28" height="11" fill="#F3D7D8"/>
+          <path d="M13.0767 23.5155C13.1304 23.4625 13.279 23.1167 13.5227 22.4781C14.7761 22.4853 16.4539 22.8683 18.5562 23.6272C17.8767 25.8366 17.33 28.1535 16.916 30.5778C16.5021 32.9755 16.2921 34.6943 16.2861 35.7343C16.2803 36.7476 16.384 37.2549 16.5973 37.2561C16.7573 37.257 17.3454 37.0071 18.3617 36.5063L18.8431 36.2691L19.555 37.6732C19.3137 37.8851 18.9922 38.15 18.5903 38.4676C18.2152 38.7855 17.4926 39.2213 16.4227 39.7751C15.353 40.3023 14.3915 40.5634 13.5382 40.5584C11.8849 40.5489 10.9292 39.7967 10.6712 38.3018C8.9559 39.7853 7.40494 40.523 6.01829 40.515C4.65832 40.5071 3.50142 39.9671 2.54761 38.8948C1.62046 37.8228 1.16352 36.1401 1.17678 33.8468C1.19745 30.2736 1.94704 27.4645 3.42556 25.4197C4.90423 23.3482 6.68355 22.3185 8.76352 22.3305C10.2568 22.3392 11.6946 22.7342 13.0767 23.5155ZM8.43792 37.1289C9.07791 37.1326 9.79936 36.8834 10.6023 36.3814C10.8107 32.6225 11.4589 28.9062 12.5468 25.2325C11.7488 24.8812 11.0698 24.7039 10.5098 24.7007C9.54985 24.6951 8.71772 25.637 8.01345 27.5263C7.336 29.3891 6.99072 31.4538 6.97761 33.7204C6.9645 35.987 7.45127 37.1232 8.43792 37.1289ZM29.5704 24.4509C28.5037 24.4447 27.6452 25.3331 26.9949 27.1161C26.3447 28.8723 26.0138 30.7638 26.0021 32.7904C25.9835 35.9904 26.9609 37.596 28.9342 37.6074C29.5742 37.6111 30.2551 37.4684 30.9768 37.1793C31.6986 36.8634 32.2737 36.5601 32.702 36.2692L33.3048 35.7927L34.2176 37.038C34.0026 37.3301 33.5737 37.7143 32.9309 38.1906C32.2882 38.6669 31.6859 39.0634 31.124 39.3801C30.5622 39.6969 29.8405 39.9861 28.959 40.2476C28.0774 40.5092 27.21 40.6375 26.3567 40.6326C24.2767 40.6206 22.7207 39.9315 21.6886 38.5656C20.6565 37.1996 20.147 35.3699 20.1603 33.0766C20.1787 29.9033 21.0602 27.3351 22.8049 25.3718C24.5763 23.4087 26.8353 22.4351 29.5819 22.4509C31.3686 22.4613 32.7795 22.8828 33.8147 23.7154C34.8767 24.5216 35.4042 25.5247 35.3973 26.7246C35.3905 27.898 35.0113 28.9091 34.2597 29.7581C33.5931 29.7543 32.8206 29.6031 31.9423 29.3047C31.064 29.0063 30.3995 28.6424 29.9486 28.2132L30.5689 24.6967C30.3299 24.5353 29.997 24.4534 29.5704 24.4509ZM39.6149 40.7093C38.6816 40.7039 37.9632 40.4197 37.4598 39.8568C36.9564 39.2939 36.7074 38.5458 36.7128 37.6124C36.7182 36.6791 37.0695 35.8811 37.7666 35.2185C38.464 34.5292 39.2793 34.1872 40.2126 34.1926C41.1726 34.1982 41.9043 34.4824 42.4077 35.0453C42.9113 35.5816 43.1604 36.3164 43.155 37.2497C43.1497 38.1563 42.785 38.9676 42.0609 39.6834C41.3636 40.3727 40.5482 40.7147 39.6149 40.7093Z" fill="black"/>
+        </svg>
+      </a>
+    </div>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+      </div>
     </nav>
-    <div class="caseStudyTitle">
-    <header class="caseStudy"> Case Study: </header>
+
+
+
+
+    <header class="caseStudyTitle">
+    <h1 class="caseStudy"> Case Study: </h1>
     <h2 class="projectName"> Travel Friendly </h2>
     <p class="description">Cloud storage application to help in traveling planning with friends.</p>
-    <button class="Prototype" onclick="window.location.href ='#';"> See Prototype </button>
-    </div>
+      <button class="Prototype" onclick="window.location.href ='#';"> SEE PROTOTYPE </button>
+  </header>
     <div class="summary">
-      <img class="summaryImage" src="" alt="project screen shot">
+      <img class="summaryImage sectioning" src="images/trippage.png" alt="project screen shot">
       <div class="sumRolProb">
         <h3 id="theSummary"> Summary </h3>
-          <p> In an era,where data is stored on the cloud, there are endless opportunities for exploration. A client wanted to create a cloud storage application but was unsure what the product would do. Travel Friendly, is a cloud storing application for planning trips with others.</p>
+          <p class="sectioning"> In an era,where data is stored on the cloud, there are endless opportunities for exploration. A client wanted to create a cloud storage application but was unsure what the product would do. Travel Friendly, is a cloud storing application for planning trips with others.</p>
         <h3 id="roles"> Roles </h3>
-          <p>My roles</p>
+          <p class="sectioning">My roles</p>
         <h3 id="problem"> The Problem </h3>
-          <p>Young adults travel at least once a year with their friends. They find it difficult to plan efficiently together due to a number of factors including, not being able to meet in person, difficulty including everyone’s perspective and differing levels of expertise on planning tools. This leads to frustration for the traveler when planning should be part of the vacation!</p>
+          <p class="sectioning">Young adults travel at least once a year with their friends. They find it difficult to plan efficiently together due to a number of factors including, not being able to meet in person, difficulty including everyone’s perspective and differing levels of expertise on planning tools. This leads to frustration for the traveler when planning should be part of the vacation!</p>
     </div>
-    <div class="process">
+    <div class="process sectioning">
       <h3 id="theProcess"> The Process </h3>
-        <p>When presented with this problem, I remembered the many trips that I went on with my friends and the struggles we had in planning on Google Drive. My roommate specifically, loved planning trips and would make spreadsheet after spreadsheet for each trip. I ran with this idea of a cloud storage application that focused on collaborating with others.</p>
-        <img class="excelImage" src="" alt="excel screen shot">
+        <p class="sectioning">When presented with this problem, I remembered the many trips that I went on with my friends and the struggles we had in planning on Google Drive. My roommate specifically, loved planning trips and would make spreadsheet after spreadsheet for each trip. I ran with this idea of a cloud storage application that focused on collaborating with others.</p>
+        <img class="excelImage" src="images/excel.png" alt="excel screen shot">
     </div>
-    <div class="survey">
+    <div class="competitiveAnalysis">
+      <h3 id="thecompetitiveAnalysis"> Competitve Analysis </h3>
+        <p class="sectioning">When presented with this problem, I remembered the many trips that I went on with my friends and the struggles we had in planning on Google Drive. My roommate specifically, loved planning trips and would make spreadsheet after spreadsheet for each trip. I ran with this idea of a cloud storage application that focused on collaborating with others.</p>
+    </div>
+    <div class="survey sectioning">
       <h3 id="theSurvey"> Survey </h3>
         <p>I created a survey that I sent out to some college friends as well as current college students. Some notable questions I asked in the survey: How often do you travel for fun?<p>
           <p>Do you usually plan out your trips?</p>
@@ -48,7 +102,7 @@
         <p>  - Organization was the biggest reason</p>
         <p>- 63.2% said planning with others is difficult because it is hard for everyone to give their input</p>
     </div>
-  <div class="userThings">
+  <div class="userThings sectioning">
     <div class="userStories">
       <h3 id="theUserStories"> User Stories </h3>
         <p>Keeping these two personas in mind, along with my survey and the competitive analysis, I wrote out the user stories for Travel Friendly. The high importance tasks are:</p>
@@ -57,73 +111,73 @@
           <li>As a returning user, I want to communicate with others in my group </li>
           <li>As a returning user, I want to create a calendar</li>
           <li>As a returning user, I want to organize my files</li>
-          <li>As a returning user, I want to share my files</li>
+          <li class="sectioning">As a returning user, I want to share my files</li>
         </ul>
     </div>
     <div class="userFlow">
       <h3 id="theUserFlow"> User Flow </h3>
-        <p>Next up, I took these high priority tasks and made users flows for them. By doing this I was able to map out a general idea of what sort of functions my application should have and got me thinking about the potential layouts. In order to do these user flows, I studied these tasks on other cloud storage sites to see all of the steps play out.</p>
-        <img class="userFlowImage" src="" alt="user flow screenshot">
-        <img class="userFlowImage" src="" alt="user flow screenshot">
+        <p class="sectioning">Next up, I took these high priority tasks and made users flows for them. By doing this I was able to map out a general idea of what sort of functions my application should have and got me thinking about the potential layouts. In order to do these user flows, I studied these tasks on other cloud storage sites to see all of the steps play out.</p>
+        <img class="userFlowImage sectioning" src="images/userflow1.png" alt="user flow screenshot">
+        <img class="userFlowImage sectioning" src="images/userflow2.png" alt="user flow screenshot">
     </div>
   </div>
-    <div class="wireframes">
-      <img class="wireframesImage" src="" alt="wireframes screenshot">
+    <div class="wireframes sectioning">
       <h3 id="theWireframes"> Wireframes </h3>
+        <img class="wireframesImage sectioning" src="images/wireframes.png" alt="wireframes screenshot">
         <p>I started my wireframes with a sketch of the all of the screens required to accomplish the tasks listed earlier. I knew that I wanted a site which was going to be easy to navigate for new users, so I looked towards Google Drive for a lot of inspiration. I took note of the tools and functions that were especially useful on Google Drive and in order to incorporate those into my design.</p>
     </div>
-    <div class="usabilityTesting">
+    <div class="usabilityTesting sectioning">
       <h3 id="theUsabilityTesting"> Usability Testing </h3>
         <p>I tested these wireframes with potential users for feedback on how I can improve upon the design. The biggest takeaway that I received was that it was a little too reminiscent of Google Drive. </p>
         <p>One user in particular expressed that the way these files were organized reminded her of work which is not the vibe I would want a travel planning website to have. I kept this in mind as I moved forward to the next steps of design.</p>
     </div>
-    <div class="branding">
+    <div class="branding sectioning">
       <h3 id="theBranding"> Branding </h3>
-      <img class="brandingImage" src="" alt="logo screenshot">
-      <img class="brandingImage" src="" alt="logo variations screenshot">
-      <img class="brandingImage" src="" alt="brand color screenshot">
+      <img class="brandingImage sectioning" src="images/logo.png" alt="logo screenshot">
+      <img class="brandingImage sectioning" src="images/logovariation.png" alt="logo variations screenshot">
+      <img class="brandingImage sectioning" src="images/brandcolors.png" alt="brand color screenshot">
         <p>I had decided on naming my product Travel Friendly pretty early on as I believed it really encapsulated exactly what the application is about. I set about sketching out some logo options to kick start the branding process. I came up with five potential logos, but one of them really stood out to me. The airplane window has been the subject of many travel photos that I have seen from friends on social media. I think it represents traveling to the age group that I am targeting and so, I chose to use it to represent my brand.</p>
         <p>Next up, I searched through the internet for photos and colors that I felt like went along with my brand. I wanted vibrant colors from sunsets and muted colors from forests. </p>
         <p>I was able to pull together a number of diverse images that I felt could best show what Travel Friendly was all about. I placed these images on a mood board.</p>
         <p>I created a style guide to map out the different logos variations and style elements that would go with Travel Friendly. I also have a list of fonts that will be used and the appropriate sizes for each font.</p>
-        <p>This can be found here: https://www.figma.com/file/NvJx8eSe8CUI6yoq8EffPO/Style-Guide?node-id=0%3A1</p>
+        <button class="brandGuide" onclick="window.location.href ='https://www.figma.com/file/NvJx8eSe8CUI6yoq8EffPO/Style-Guide?node-id=0%3A1';"> Brand Guide </button>
     </div>
-    <div class="mockups">
+    <div class="mockups sectioning">
       <h3 id="theMockups"> Mockups </h3>
-      <img class="mockupImage" src="" alt="all trips page screenshot">
-      <p>I took all of the information I gathered from the usability tests along with my style guide and created a high fidelity mockup of Travel Friendly. I started out by going back to my original sketched and deviating a bit from the Google Drive layout. This led to a more simple homepage with less scattered files and folders. The landing page design was based off of popular design trends found in popular websites today. This included a large eye catching image with texts dispersed throughout the page. Since link saving was a function that survey takers expressed as something they would utilize in a planning website, I decided to add a search bar so that users may look up articles etc for their trip. Users can then save these links to their respective trip pages along with content that they create themselves. </p>
-      <img class="mockupImage" src="" alt="trip page screenshot">
-      <img class="mockupImage" src="" alt="calendar page screenshot">
+      <img class="mockupImage sectioning" src="images/Alltrips.png" alt="all trips page screenshot">
+      <p class="sectioning">I took all of the information I gathered from the usability tests along with my style guide and created a high fidelity mockup of Travel Friendly. I started out by going back to my original sketched and deviating a bit from the Google Drive layout. This led to a more simple homepage with less scattered files and folders. The landing page design was based off of popular design trends found in popular websites today. This included a large eye catching image with texts dispersed throughout the page. Since link saving was a function that survey takers expressed as something they would utilize in a planning website, I decided to add a search bar so that users may look up articles etc for their trip. Users can then save these links to their respective trip pages along with content that they create themselves. </p>
+      <img class="mockupImage sectioning" src="images/trippage.png" alt="trip page screenshot">
+      <img class="mockupImage sectioning" src="images/calendar.png" alt="calendar page screenshot">
       <p>The collaborators are clearly show at the top with an option to add more. Right below is a list of folders that the user can name for better organization. The two circles on the bottom are fixtures on each page. The bottom one is a messenger that allows users to communicate with each other on any page so that the collaboration can flow seamlessly through each document. </p>
       <p>This is different from Google Drive where users may communicate on separate documents. Creating a calendar, according to survey takers, is an essential part of travel planning. Users can create multiple calendars and tag them to organize them into various folders.</p>
     </div>
-    <div class="preferenceTesting">
+    <div class="preferenceTesting sectioning">
       <h3 id="thePreferenceTesting"> Preference Testing</h3>
         <p>I conducted preference testing in person for three elements. Test number one was choosing between circle images or square images for the travel folders. Circle won out over the squares and the feedback I received was that circles are more interesting to look at. The same result was found when I tested circle images against square images for the travel creation page.</p>
         <p>The third test was between lines and boxes for the sign up page. The unanimous feedback was that people preferred the lines. This is probably due to the fact that all testers were iphone users and boxes are more reminiscent of androids.</p>
     </div>
-    <div class="prototyping">
+    <div class="prototyping sectioning">
       <h3 id="thePrototyping"> Prototyping</h3>
         <p>I tested the finished prototype with three different users. Each user was able to navigate through the pages to complete the high importance tasks with relative ease. Interesting note: most users in this round along with all user in the first usability testing chose to sign up through Facebook to avoid having to enter all of their information. Users expressed confusion when they saw the plus button on the mobile. One user in particular expressed that they would not know what the plus button was for from page to page. I fixed this issue by changing the plus button on the calendar page to a “new” button much like in the web version.</p>
-        <p>On the mobile version, it wasn’t particularly clear that users are to click on the travel page title (in this case “Tokyo, Japan”) to return to the travel page. All users were able to accomplish this task of returning to the travel page but only after thinking about it for a bit. In order to improve upon this, I added a back arrow.</p>
-        <img class="prototypingImage" src="" alt="mobile calendar screenshot">
+        <p class="sectioning">On the mobile version, it wasn’t particularly clear that users are to click on the travel page title (in this case “Tokyo, Japan”) to return to the travel page. All users were able to accomplish this task of returning to the travel page but only after thinking about it for a bit. In order to improve upon this, I added a back arrow.</p>
+        <img class="prototypingImage" src="images/prototyping.png" alt="mobile calendar screenshot">
     </div>
-    <div class="conclusion">
+    <div class="conclusion sectioning">
       <h3 id="theConclusion"> Conclusion</h3>
         <p>I was very pleased and surprised throughout this whole process that a good number of my friends and test subjects told me to “please make this real.” This just showed me that I found a niche place for a cloud storage website that people would actually use. I think the idea of making planning easier especially planning with others, is very appealing to young adults these days. If given more time, I would love to come up with more functions for Travel Friendly. For example, a tutorial when users first sign up would be very helpful to help cut down on the learning curve that may be in place for people who aren’t used to working with documents online. I learned a lot about how important it is to focus in on the high importance tasks that I had decided on earlier, otherwise I get too overwhelmed by the possibilities and veer off what the application should be about.</p>
-        <p>I also learned exactly how important color theory is when a user expressed such aversion to the orange I had chosen. Taking all of this new found knowledge with me, I hope to be more concise with my design in the future. What I mean is that I don’t want to focus on quantity of functions over the quality. I would also be more wise in including colors into my preference testing.</p>
+        <p class="sectioning">I also learned exactly how important color theory is when a user expressed such aversion to the orange I had chosen. Taking all of this new found knowledge with me, I hope to be more concise with my design in the future. What I mean is that I don’t want to focus on quantity of functions over the quality. I would also be more wise in including colors into my preference testing.</p>
     </div>
 
     <footer class="footer">
      <ul class="socials">
        <li>
          <a href="{Your LinkedIn URL}">
-           <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+           <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
          </a>
        </li>
        <li>
          <a href="mailto:{Your email address}">
-           <i class="fa fa-envelope-square" aria-hidden="true"></i>
+           <i class="fa fa-envelope-square fa-2x" aria-hidden="true"></i>
          </a>
        </li>
       </ul>
