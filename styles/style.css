@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
-  padding: 84px 2em 0 2em;
+  padding: 84px 3em 0 3em;
   line-height: 1.2;
 }
 
@@ -25,7 +25,7 @@ h2.projectName:after {
     background-color: #F7D794;
     top: .5em;
     z-index: -1;
-    left: 2em;
+    left: 3em;
 }
 
 .projectName {
@@ -33,7 +33,7 @@ h2.projectName:after {
   padding-bottom: 0.8em;
   z-index: -1;
   font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 .description {
@@ -74,7 +74,7 @@ nav.solid {
 } */
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
   font-family: 'Oleo Script', cursive;
 }
 
@@ -85,7 +85,7 @@ h2 {
 
 h3 {
   font-family: 'Oleo Script', cursive;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: bold;
 }
 
@@ -106,14 +106,14 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 }
 
 header img {
   width: 100%;
 }
 
-header div {
+header div.intro {
   display: flex;
   position: relative;
   justify-content: flex-start;
@@ -142,17 +142,6 @@ header div {
   justify-content: space-around;
 }
 
-@media screen and (min-width: 575px){
-
-
-}
-@media screen and (min-width: 991px){
-
-
-}
-@media screen and (min-width: 1199px){
-
-}
 
 
 nav {
@@ -326,7 +315,7 @@ a:hover
 }
 
 .summary {
-  padding-top: 2em;
+  padding-top: 3em;
 }
 
 h3{
@@ -353,7 +342,7 @@ footer {
   background-color: #E8AEB1;
   padding: 1em;
   width: 100vw;
-  margin-left: -2em;
+  margin-left: -3em;
 }
 
 footer ul {
@@ -391,4 +380,114 @@ footer ul {
 .myWork{
 background-color: #76C3D2;
 padding: 0.3em;
+}
+
+
+@media screen and (min-width: 575px){
+
+}
+@media screen and (min-width: 991px){
+  #menu {
+    margin: 0;
+    padding: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    align-items: flex-end;
+    top: 19px;
+    background: transparent;
+    left: calc(100vw - 1em);
+  }
+  #menuToggle {
+    position: inherit;
+  }
+  /* nav {
+    position: relative;
+  } */
+  #menuToggle span {
+    display: none
+  }
+  #menuToggle input {
+    display: none;
+  }
+  .ashLogo {
+      right: inherit;
+      left: 3em;
+  }
+  header div.intro {
+    position: absolute;
+    top: 0;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 4em;
+  }
+  .workTitle {
+      align-items: center;
+  }
+  .project {
+    width: 30%;
+  }
+  .allProjects {
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 10%;
+  }
+  header {
+    flex-direction: row;
+  }
+  .half {
+    width: calc(50% - 3em);
+  }
+  .whole {
+    display: flex;
+    justify-content: space-between;
+  }
+  .third {
+    width: calc(33% - 3em);
+  }
+  .description {
+   padding-bottom: 0;
+  }
+  .Prototype {
+    margin-top: auto;
+    margin-left: 2em;
+  }
+  .caseStudyTitle div {
+    margin-left: 2em;
+  }
+
+  .helloAsh {
+    padding-left: 5em
+  }
+  .ashleyimg {
+    padding-top: 2em;
+    padding-right: 5em;
+    width: 25%;
+  }
+
+  .abme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10em;
+  }
+}
+
+
+@media screen and (min-width: 1199px){
+
+}
+@media screen and (max-width: 990px){
+  .helloAsh {
+    padding-bottom: 3em
+  }
+
+  .ashleyimg{
+    padding-bottom: 3em;
+  }
+
+  .abme {
+    padding-bottom: 10em;
+  }
 }
