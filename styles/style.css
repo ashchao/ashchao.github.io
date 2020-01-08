@@ -3,12 +3,15 @@ img {
   width: 100%;
 }
 
+.main {
+  padding: 84px 3em 0 3em;
+  box-sizing: border-box
+}
 body {
   background-color: #F9F5F5;
   font-size: 16px;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
-  padding: 84px 3em 0 3em;
   line-height: 1.2;
 }
 
@@ -45,6 +48,7 @@ h2.projectName:after {
   height: 3em;
   font-size: 1em;
   font-weight: bold;
+  border-radius: 0.5em;
 }
 /* nav {
   background-color: transparent;
@@ -64,6 +68,14 @@ nav > a, nav > div{
   padding: 1em 0;
 }
 
+.thanks{
+  text-align: center;
+  max-width: 50em;
+  margin: auto;
+  padding-bottom: 2em;
+  font-size: 1.25em;
+}
+
 /* nav > div > a {
   padding: 0 1em;
   color: black;
@@ -75,24 +87,35 @@ nav.solid {
 
 h1 {
   font-size: 3em;
-  font-family: 'Oleo Script', cursive;
+  /* font-family: 'Oleo Script', cursive; */
+  font-family: 'Prata', serif;
 }
 
 h2 {
-  font-family: 'Oleo Script', cursive;
+  /* font-family: 'Oleo Script', cursive; */
+  font-family: 'Prata', serif;
   font-size: 1.5em;
 }
 
 h3 {
-  font-family: 'Oleo Script', cursive;
+  /* font-family: 'Oleo Script', cursive; */
+  font-family: 'Prata', serif;
   font-size: 3em;
-  font-weight: bold;
+  line-height: normal;
+  max-width: 50em;
+  margin: auto;
 }
 
 h4 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.25em;
   padding-bottom: 0.5em;
+  font-weight: bold;
+}
+
+h5{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.20em;
   font-weight: bold;
 }
 .sayHello, .Prototype {
@@ -315,7 +338,8 @@ a:hover
 }
 
 .summary {
-  padding-top: 3em;
+  display: flex;
+  justify-content: space-between;
 }
 
 h3{
@@ -324,6 +348,10 @@ h3{
 
 .sectioning {
   padding-bottom: 1em;
+  text-align: left;
+  max-width: 50em;
+  margin: auto;
+  line-height: 1.5em;
 }
 
 button {
@@ -331,18 +359,22 @@ button {
 }
 
 .brandGuide {
-  width: 7em;
+  /* width: 7em; */
   height: 3em;
   font-size: 1em;
   font-weight: bold;
   background-color: #E8AEB1;
+  max-width: 50em;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 footer {
   background-color: #E8AEB1;
   padding: 1em;
-  width: 100vw;
   margin-left: -3em;
+  margin-right: -3em;
 }
 
 footer ul {
@@ -351,7 +383,9 @@ footer ul {
 }
 
 .sayHello {
-  height: 3em;
+  height: 4em;
+  width: 8em;
+  border-radius: 0.5em;
 }
 
 .workTitle {
@@ -378,15 +412,21 @@ footer ul {
 }
 
 .myWork{
-background-color: #76C3D2;
+/* background-color: #76C3D2; */
 padding: 0.3em;
 }
 
+.projectButton {
+   background-color: #76C3D2;
+   width: 10em;
+   height: 3em;
+   border-radius: 0.5em;
+}
 
 @media screen and (min-width: 575px){
 
 }
-@media screen and (min-width: 991px){
+@media screen and (min-width: 767px){
   #menu {
     margin: 0;
     padding: 0;
@@ -431,28 +471,26 @@ padding: 0.3em;
   .allProjects {
     flex-direction: row;
     justify-content: space-around;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
   header {
     flex-direction: row;
   }
   .half {
-    width: calc(50% - 3em);
+    width: calc(50% - 1em);
   }
   .whole {
+    max-width: 100em;
     display: flex;
     justify-content: space-between;
   }
   .third {
-    width: calc(33% - 3em);
+    width: calc(33% - 1em);
   }
   .description {
    padding-bottom: 0;
   }
-  .Prototype {
-    margin-top: auto;
-    margin-left: 2em;
-  }
+
   .caseStudyTitle div {
     margin-left: 2em;
   }
@@ -463,7 +501,7 @@ padding: 0.3em;
   .ashleyimg {
     padding-top: 2em;
     padding-right: 5em;
-    width: 25%;
+    width: 30%;
   }
 
   .abme{
@@ -478,7 +516,7 @@ padding: 0.3em;
 @media screen and (min-width: 1199px){
 
 }
-@media screen and (max-width: 990px){
+@media screen and (max-width: 767px){
   .helloAsh {
     padding-bottom: 3em
   }
