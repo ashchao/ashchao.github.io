@@ -19,6 +19,8 @@ body {
   padding-bottom: 0.8em;
 }
 
+
+
 h2.projectName:after {
     position: absolute;
     display: block;
@@ -387,6 +389,7 @@ footer ul {
   width: 8em;
   border-radius: 0.5em;
 }
+
 
 .workTitle {
   display: flex;
