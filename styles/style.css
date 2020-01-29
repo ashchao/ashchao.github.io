@@ -1,11 +1,60 @@
 
+.projectDescription {
+  padding-bottom: 1em;
+}
+
+
 img {
   width: 100%;
 }
 
+strong {
+  color: #E8AEB1;
+  font-weight: bold;
+}
+
+.mockupImage {
+  width: 70%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #F9F5F5; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #76C3D2;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #F9F5F5;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #F9F5F5;
+  padding: 20px;
+  padding-top: 5em;
+}
+
 .main {
   padding: 84px 3em 0 3em;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 body {
   background-color: #F9F5F5;
@@ -15,11 +64,19 @@ body {
   line-height: 1.2;
 }
 
+input, textarea {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1em;
+}
+
 .caseStudy {
   padding-bottom: 0.8em;
 }
 
-
+p {
+  padding: 0.5em;
+  line-height: 1.75em;
+}
 
 h2.projectName:after {
     position: absolute;
@@ -33,12 +90,16 @@ h2.projectName:after {
     left: 3em;
 }
 
+.aboutme {
+  padding-bottom: 0.5em;
+}
+
 .projectName {
   position: relative;
   padding-bottom: 0.8em;
   z-index: -1;
   font-family: 'Open Sans', sans-serif;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .description {
@@ -68,6 +129,9 @@ nav > a, nav > div{
 
 .slogan {
   padding: 1em 0;
+  font-size: 1.5em;
+  font-weight: 100;
+  line-height: 1.5em;
 }
 
 .thanks{
@@ -78,6 +142,9 @@ nav > a, nav > div{
   font-size: 1.25em;
 }
 
+p {
+  font-size: 1.1em;
+}
 /* nav > div > a {
   padding: 0 1em;
   color: black;
@@ -86,23 +153,31 @@ nav > a, nav > div{
 nav.solid {
   background-color: white;
 } */
+.userPersonas img {
+  border-radius: 1em;
+}
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   /* font-family: 'Oleo Script', cursive; */
-  font-family: 'Prata', serif;
+  /* font-family: 'Prata', serif; */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 h2 {
   /* font-family: 'Oleo Script', cursive; */
-  font-family: 'Prata', serif;
+  /* font-family: 'Prata', serif; */
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5em;
 }
 
 h3 {
   /* font-family: 'Oleo Script', cursive; */
-  font-family: 'Prata', serif;
-  font-size: 3em;
+  /* font-family: 'Prata', serif; */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
   line-height: normal;
   max-width: 50em;
   margin: auto;
@@ -113,20 +188,21 @@ h4 {
   font-size: 1.25em;
   padding-bottom: 0.5em;
   font-weight: bold;
+  padding-left: 0.5em;
 }
 
 h5{
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.20em;
+  font-size: 1em;
   font-weight: bold;
 }
 .sayHello, .Prototype {
   background-color: #E8AEB1;
 }
 
-
-
-
+.personaTitles {
+  font-size: 1.3em;
+}
 header {
   display: flex;
   flex-direction: column;
@@ -168,7 +244,6 @@ header div.intro {
 }
 
 
-
 nav {
   position: fixed;
   background-color: transparent;
@@ -185,11 +260,36 @@ nav.solid {
 
 a{
   text-decoration: none;
-  color: #232323;
-
+  color: #3BABC0;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
+#menu a {
+  color: #232323;
+  font-weight: normal;
+}
+
+footer a {
+  color: #232323;
+  font-weight: normal;
+}
+
+hr {
+    color: black;
+}
+
+
+.small {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.topft {
+  display: flex;
+  justify-content: center;
+}
 a:hover
 {
   color: tomato;
@@ -339,21 +439,22 @@ a:hover
   margin-top: 9px;
 }
 
+
 .summary {
   display: flex;
   justify-content: space-between;
 }
 
 h3{
-  padding-bottom: 0.1em;
+  padding-bottom: 0.3em;
 }
 
 .sectioning {
-  padding-bottom: 1em;
+  padding-bottom: 5em;
   text-align: left;
   max-width: 50em;
   margin: auto;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 
 button {
@@ -381,7 +482,11 @@ footer {
 
 footer ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+footer li {
+  padding: 0 1em;
 }
 
 .sayHello {
@@ -390,6 +495,25 @@ footer ul {
   border-radius: 0.5em;
 }
 
+
+.usTableCont {
+  padding: 1em;
+  height: 16em;
+  overflow: scroll;
+  /* padding-left: 5em; */
+  display: flex;
+  flex-direction: column;
+}
+
+.usTable th {
+  background-color: #E8AEB1;
+  font-weight: bold;
+  padding: 0.5em 1em;
+}
+
+.usTable td {
+  padding: 0.5em 1em;
+}
 
 .workTitle {
   display: flex;
@@ -402,6 +526,13 @@ footer ul {
   top: 100%;
   padding-top: 1em;
 }
+
+/* .ashleyimg {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2em;
+} */
+
 
 @media screen and (max-width: 990px){
 .workTitle p {
@@ -425,6 +556,8 @@ padding: 0.3em;
    height: 3em;
    border-radius: 0.5em;
 }
+
+
 
 @media screen and (min-width: 575px){
 
@@ -459,7 +592,6 @@ padding: 0.3em;
       left: 3em;
   }
   header div.intro {
-    position: absolute;
     top: 0;
     justify-content: flex-start;
     align-items: center;
@@ -502,10 +634,15 @@ padding: 0.3em;
     padding-left: 5em
   }
   .ashleyimg {
-    padding-top: 2em;
-    padding-right: 5em;
+    padding-top: 3em;
+    /* padding-left: 5em;
+    padding-right: 3em; */
     width: 30%;
+    /* display: inline-block; */
   }
+
+
+
 
   .abme{
   display: flex;
@@ -531,4 +668,9 @@ padding: 0.3em;
   .abme {
     padding-bottom: 10em;
   }
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
 }
