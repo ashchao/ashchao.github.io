@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Portfolio | Ashley Chao</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Font Awesome -->
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="styles/reset.css">
+      <link rel="stylesheet" href="styles/style.css">
+      <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+      <script src="styles/project.js" async></script>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=GFS+Didot&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Prata&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <nav> -->
+      <!-- <a href="/#/">Logo</a>
+      <div>
+        <a href="/work/">Work</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </nav> -->
+
+    <div class="ashLogo">
+      <a href="index.html">
+        <svg width="50" height="41" viewBox="0 0 50 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="22" y="27" width="28" height="11" fill="#F3D7D8"/>
+          <path d="M13.0767 23.5155C13.1304 23.4625 13.279 23.1167 13.5227 22.4781C14.7761 22.4853 16.4539 22.8683 18.5562 23.6272C17.8767 25.8366 17.33 28.1535 16.916 30.5778C16.5021 32.9755 16.2921 34.6943 16.2861 35.7343C16.2803 36.7476 16.384 37.2549 16.5973 37.2561C16.7573 37.257 17.3454 37.0071 18.3617 36.5063L18.8431 36.2691L19.555 37.6732C19.3137 37.8851 18.9922 38.15 18.5903 38.4676C18.2152 38.7855 17.4926 39.2213 16.4227 39.7751C15.353 40.3023 14.3915 40.5634 13.5382 40.5584C11.8849 40.5489 10.9292 39.7967 10.6712 38.3018C8.9559 39.7853 7.40494 40.523 6.01829 40.515C4.65832 40.5071 3.50142 39.9671 2.54761 38.8948C1.62046 37.8228 1.16352 36.1401 1.17678 33.8468C1.19745 30.2736 1.94704 27.4645 3.42556 25.4197C4.90423 23.3482 6.68355 22.3185 8.76352 22.3305C10.2568 22.3392 11.6946 22.7342 13.0767 23.5155ZM8.43792 37.1289C9.07791 37.1326 9.79936 36.8834 10.6023 36.3814C10.8107 32.6225 11.4589 28.9062 12.5468 25.2325C11.7488 24.8812 11.0698 24.7039 10.5098 24.7007C9.54985 24.6951 8.71772 25.637 8.01345 27.5263C7.336 29.3891 6.99072 31.4538 6.97761 33.7204C6.9645 35.987 7.45127 37.1232 8.43792 37.1289ZM29.5704 24.4509C28.5037 24.4447 27.6452 25.3331 26.9949 27.1161C26.3447 28.8723 26.0138 30.7638 26.0021 32.7904C25.9835 35.9904 26.9609 37.596 28.9342 37.6074C29.5742 37.6111 30.2551 37.4684 30.9768 37.1793C31.6986 36.8634 32.2737 36.5601 32.702 36.2692L33.3048 35.7927L34.2176 37.038C34.0026 37.3301 33.5737 37.7143 32.9309 38.1906C32.2882 38.6669 31.6859 39.0634 31.124 39.3801C30.5622 39.6969 29.8405 39.9861 28.959 40.2476C28.0774 40.5092 27.21 40.6375 26.3567 40.6326C24.2767 40.6206 22.7207 39.9315 21.6886 38.5656C20.6565 37.1996 20.147 35.3699 20.1603 33.0766C20.1787 29.9033 21.0602 27.3351 22.8049 25.3718C24.5763 23.4087 26.8353 22.4351 29.5819 22.4509C31.3686 22.4613 32.7795 22.8828 33.8147 23.7154C34.8767 24.5216 35.4042 25.5247 35.3973 26.7246C35.3905 27.898 35.0113 28.9091 34.2597 29.7581C33.5931 29.7543 32.8206 29.6031 31.9423 29.3047C31.064 29.0063 30.3995 28.6424 29.9486 28.2132L30.5689 24.6967C30.3299 24.5353 29.997 24.4534 29.5704 24.4509ZM39.6149 40.7093C38.6816 40.7039 37.9632 40.4197 37.4598 39.8568C36.9564 39.2939 36.7074 38.5458 36.7128 37.6124C36.7182 36.6791 37.0695 35.8811 37.7666 35.2185C38.464 34.5292 39.2793 34.1872 40.2126 34.1926C41.1726 34.1982 41.9043 34.4824 42.4077 35.0453C42.9113 35.5816 43.1604 36.3164 43.155 37.2497C43.1497 38.1563 42.785 38.9676 42.0609 39.6834C41.3636 40.3727 40.5482 40.7147 39.6149 40.7093Z" fill="black"/>
+        </svg>
+      </a>
+    </div>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+
+        <!--
+        Some spans to act as a hamburger.
+
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="aboutme.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+
+<div class="main">
+    <header class="caseStudyTitle">
+    <h1 class="caseStudy"> Case Study: </h1>
+    <div>
+      <h2 class="projectName"> BookSmart </h2>
+      <!-- <p class="description">Cloud storage application to help in traveling planning with friends.</p> -->
+    </div>
+  </header>
+  <img src="images/bsspread.png" alt="project screenshot"/>
+      <div class="sectioning">
+        <h3 id="theSummary"> Summary </h3>
+          <p class="height"> According to my research, a good number of students buy and sell textbooks to fellow classmates. The only means they can accomplish this, however, is through a disorganized Facebook group page. BookSmart connects users with other students so that they can buy or sell used textbooks directly. </p>
+        <!-- <h3 id="roles"> Roles </h3>
+          <p class="sectioning">My roles</p> -->
+          <!-- <button class="Prototype" onclick="window.location.href ='#';"> SEE PROTOTYPE </button> -->
+          <a href='https://www.figma.com/proto/AONfxXI8saCEK4y401A1Su/High-Fidelity-Mockups?node-id=30%3A759&viewport=-487%2C318%2C0.08429098129272461&scaling=min-zoom' target="_blank"> >> See Prototype </a>
+          </div>
+      <div class="sectioning">
+        <h3 id="problem"> The Problem </h3>
+          <p class="height">Buying and selling on Facebook can be confusing as many listings get pushed down and lost within hours of posting. Students often have trouble finding the textbooks they need through the search bar and rather than sorting through hundreds of posts, they turn to Amazon or other retailers.</p>
+      </div>
+
+    <div class="process sectioning">
+
+
+        <h3 id="theProcess"> The Process </h3>
+        <p class="height">When I was in college, I often bought and sold my textbooks on the Facebook group page for my school. Students would post a photo with all of the books they are trying to sell and listed their titles in the description box. However, I often found my post pushed down within an hour of my listing to never be found again. A good number of posts would get tens of comments asking about different textbooks and sometimes it was unclear whether the textbook I commented about was still available. Overall, the process was a mess. Despite that, students continued to buy and sell on that page for the lowest prices and the convenience of being able to meet in person in a timely manner.
+I designed BookSmart with all of this in mind, and hope to target students in secondary education and beyond.
+ </p>
+        <!-- <img class="excelImage" src="images/excel.png" alt="excel screen shot"> -->
+
+    </div>
+
+      <div class="competitiveAnalysis sectioning">
+      <h3 id="thecompetitiveAnalysis"> Competitve Analysis </h3>
+        <p class="height">I started with a competitive analysis of some of the competition out there. Specifically I studied Amazon, Chegg, and eBay. All three sites sold textbooks, some used and some new. Amazon and Chegg also offered a renting service, which according to my survey, some students opted to do in order to save money. These three sites are all popular with students but they don’t quite offer what BookSmart offers, which is buying directly from their classmates at the same school. This is a niche that no other website fills. </p>
+      <a href="https://docs.google.com/document/d/1gn5WpHG1qPpVJNLNXldQex-5BABHpWN-cG2Alcj0Ulc/edit?usp=sharing" target="_blank"> >> Read the Competitive Analysis Here </a>
+      </div>
+
+
+      <div class="survey sectioning">
+        <h3 id="theSurvey"> Survey </h3>
+          <p>I created a survey in order to better understand students’ buying habits in regards to textbooks. I wanted to know if people nowadays rented textbooks more than buying them and whether they would prefer to buy textbooks but renting is just cheaper.
+ </p>
+
+    <!-- <div class="whole sectioning">
+    <div class="half">
+    <canvas id="myChart"></canvas>
+    <script class="half" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"> </script>
+    <script>var ctx = document.getElementById('myChart').getContext('2d');
+    var myPieChart = new Chart(ctx, {
+        type: 'pie',
+        data:{
+            datasets: [{
+            data: [20.8 , 29.2, 37.5, 12.5],
+            backgroundColor: [
+                    'rgba(255, 99, 132, 0.9)',
+                    'rgba(54, 162, 235, 0.9)',
+                    'rgba(255, 206, 86, 0.9)',
+                    'rgba(75, 192, 192, 0.9)'
+                ]
+        }],
+        labels: [
+            'Less than once a year',
+            '1-2 times a year',
+            '3-4 times a year',
+            'more than 5 times a year'
+        ]
+        },
+        options: {
+                legend: {
+                    position: 'right'
+                },
+                title: {
+                    display: true,
+                    text: 'Do you usually plan out your trips?'
+                }
+            }
+    });
+    </script>
+</script>
+</div>
+<div class="half">
+  <canvas id="myChart2"></canvas>
+<script>
+var ctx = document.getElementById('myChart2').getContext('2d');
+var myPieChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data:{
+        datasets: [{
+            data: [15, 4, 4, 1, 1, 1, 1, 1],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.9)',
+                'rgba(54, 162, 235, 0.9)',
+                'rgba(255, 206, 86, 0.9)',
+                'rgba(0, 204, 0, 0.9)',
+                'rgba(153, 102, 255, 0.9)',
+                'rgba(255, 159, 64, 0.9)',
+                'rgba(204, 0, 204, 0.9)',
+                'rgba(0, 204, 204, 0.9)'
+            ]
+        }],
+        labels: [
+                'On Google Drive',
+                'On Excel',
+                'In a notebook',
+                'Trello',
+                'Word doc',
+                'Google Maps',
+                'Make a Yelp Collection ',
+                'Wikitravel / travelwiki / tripadvisor'
+        ]
+    },
+    options: {
+        legend: {
+            display: false
+        },
+        title: {
+            display: true,
+            text: 'What tools do you use to plan your trip?'
+        }
+    }
+});
+</script>
+</div>
+</div>
+  <div class="whole stats">
+    <div class="third">
+    <h3><strong>96%</strong></h3>
+    <p>of participants plan their trips to an extent</p>
+    </div>
+    <div class="third">
+    <h3><strong>78%</strong></h3>
+    <p> plan their trips with other people</p>
+    </div>
+    <div class="third">
+    <h3><strong>63%</strong></h3>
+    <p> say they find that planning with others can be difficult because it is hard for everyone to give their input	</p>
+    </div>
+  </div>
+<br> -->
+    <a href="https://docs.google.com/document/d/1o6_phoTzWtVpVwyve_aYPW5VAkQ8ulsImmRU9GjPHH0/edit?usp=sharing" target="_blank"> >> See Survey Analysis Here </a>
+    </div>
+
+    <div class="userPersonas sectioning">
+      <h3 id="theUserPersonas"> User Personas </h3>
+        <p>Following the survey, I reached out to a few participants with more in depth follow up questions. Using their responses along with the data I collected from the survey, I was able to craft three user personas. </p>
+        <br>
+        <div class="whole">
+        <div class="Dana half">
+        <img src="images/dana.jpeg" alt="project screenshot"/>
+          <h4>Jennifer</h4>
+          <p> Pursuing a B.S. in Computer Science</p>
+          <div class="personaTitles"> <p>GOALS</p></div>
+          <p> Make the deans honor list, graduate magna cum laude, work as an intern over the summer </p>
+          <div class="quote">
+            <p>“Textbooks can cost more than half of what I pay for rent, so I have to cut costs where I can”</p>
+          </div>
+          <div class="personaTitles"> <p>FRUSTRATIONS</p></div>
+          <p> Prefers to have physical copies of textbooks, but PDFs online are cheaper or free. Usually will rent over buy but feels that it is a waste of money</p>
+        </div>
+        <div class="Sharon half">
+          <img src="images/joshua.png" alt="project screenshot"/>
+          <h4>Joshua</h4>
+          <p> Pursuing a B.A. in Pschology</p>
+          <div class="personaTitles"> <p>GOALS</p></div>
+          <p> Spend more time studying, start budgeting money, find a career that is fulfilling </p>
+          <div class="quote">
+            <p>“I don’t know why textbooks costs so much money when we already pay so much for tuition.”</p>
+          </div>
+          <div class="personaTitles"> <p>FRUSTRATIONS</p></div>
+          <p> Buys textbooks with the plan to resell them but sometimes his posts get pushed down on the Facebook page</p>
+        </div>
+      </div>
+        <a href=" https://www.figma.com/file/Pi9f4WZo26Y4xsD6UoF8h9/User-Persona-Textbook?node-id=0%3A1" target="_blank"> >> See Full User Personas Here </a>
+
+      </div>
+
+  <div class="userThings">
+    <div class="userStories sectioning">
+      <h3 id="theUserStories"> User Stories </h3>
+        <p>Keeping those user stories, survey data, and competitive analysis in mind, I wrote out the user stories for BookSmart. </p>
+        <div class="usTableCont sectioning">
+        <table class="usTable">
+          <tr>
+            <th>Role</th>
+              <th>Task</th>
+              <th>Rank </th>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to look up my school page so that I can look at what my classmates are selling</td>
+              <td>High</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to look up a specific course so that I can see if the textbook I need is available</td>
+              <td>High</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to post a listing for my textbook so that someone can buy my used textbook</td>
+              <td>High</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to look at various options for textbooks so that I can get the condition and price I want</td>
+              <td>High</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to search the title of my textbook so that I can see what is available</td>
+              <td>High</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to look up a subject so I can see if the textbook I need is available at another school </td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to compare prices so that I can ensure I am getting a good deal</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to post pictures so that buyers can see the condition of my textbooks</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to create an account so I can save all my information in one place</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to specify the criteria of textbook I want so I can get the condition I want </td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to choose the location to meet the buyer/seller so I can get my textbook in time</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to choose a payment option for my textbooks to ensure the deal goes through</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to read details of the listing so that I can make sure I am buying the right textbook</td>
+              <td>Medium</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to leave reviews for sellers so that I can ensure other buyers get proper information</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to read seller reviews so that I can make sure they are reliable</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to message the seller so that I can ask questions about the textbook</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to sort my search results so that I can look at textbooks by the criteria I want</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to look at pictures so that I can ensure I get the quality I want</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to look at recommended course material so I can pick up other textbooks I might need</td>
+              <td>Low</td>
+          </tr>
+          <tr>
+              <td>As a returning user</td>
+              <td>I want to favorite some sellers so I can come back to look at their listings</td>
+              <td>Low</td>
+          </tr>
+        </div>
+    </table>
+
+
+        <!-- <ul>
+          <li>As a returning user, I want to create content.</li>
+          <li>As a returning user, I want to communicate with others in my group </li>
+          <li>As a returning user, I want to create a calendar</li>
+          <li>As a returning user, I want to organize my files</li>
+          <li class="sectioning">As a returning user, I want to share my files</li>
+        </ul> -->
+    </div>
+  </div>
+    <div class="theUserFlow sectioning">
+    <div class="userFlow">
+      <h3 id="theUserFlow"> User Flow </h3>
+        <p>Next up, I took these high priority tasks and made user flows for them. By doing this I was able to map out a general idea of what sort of functions BookSmart should have and what actions to prioritize. </p>
+      </div>
+      <p>Look up school page:</p>
+      <img src="images/bsflow1.png" alt="user flow image">
+      <p>Look up course:</p>
+      <img src="images/bsflow2.png" alt="user flow image">
+      <p>Post a listing: </p>
+      <img src="images/bsflow3.png" alt="user flow image">
+      <p>Look through various postings: </p>
+      <img src="images/bsflow4.png" alt="user flow image">
+      <p>Search textbook title:  </p>
+      <img src="images/bsflow5.png" alt="user flow image">
+  </div>
+  <!-- <div class="whole">
+  <img class="userFlowImage sectioning half" src="images/userflow1.png" alt="user flow screenshot">
+  <img class="userFlowImage sectioning half" src="images/userflow2.png" alt="user flow screenshot">
+  </div> -->
+
+    <div class="wireframes sectioning">
+        <h3 id="theWireframes"> Wireframes </h3>
+        <img src="images/BMwireframesketches.png" alt="wireframes screenshot">
+        <div>
+          <img class="wfp" src="images/bswireframes.png" alt="wireframes screenshot">
+          <img class="wfp" src="images/bswireframes2.png" alt="wireframes screenshot">
+            </div>
+        <!-- <img class="wireframesImage sectioning" src="images/wireframeslong.png" alt="wireframes screenshot"> -->
+      <p>I started by first sketching out my wireframes to get a few ideas out. I created a few different variations of screens that would accomplish all of the high priority tasks. I wanted to aim for a clear and concise website that would be easy to navigate for students. I studied a variety of online retail websites from Amazon to Mejuri to see what kind of layouts users may be familiar with. I then translated the sketches to Figma and created 5 detailed wireframes.
+</p>
+        <a href="https://www.figma.com/file/M1j2iYTNP8FSygRXvOn5i6/Textbook-Wireframes?node-id=0%3A1" target="_blank"> >> See All Wireframes Here</a>
+    </div>
+    <!-- <div class="usabilityTesting sectioning">
+      <h3 id="theUsabilityTesting"> Usability Testing </h3>
+        <p>I tested these wireframes with potential users for feedback on how I can improve upon the design. The biggest takeaway that I received was that it was a little too reminiscent of Google Drive. </p>
+        <p>One user in particular expressed that the way these files were organized reminded her of work which is not the vibe I would want a travel planning website to have. I kept this in mind as I moved forward to the next steps of design.</p>
+    </div> -->
+
+    <div class="branding sectioning">
+      <h3 id="theBranding"> Branding </h3>
+      <img class="brandingImage" src="images/bslogoovar.png" alt="logo screenshot">
+
+        <p>At first, I had decided on naming my website “Textbook Match” to describe the goal of matching students in order to buy/sell textbooks. This title proved to be too long and so I changed it to BookSmart. BookSmart refers to phrase “book smart” which means someone who has academic intelligence. BookSmart also alludes to the fact that students are shopping “smartly” by using our website and buying from their classmates for a lower price.
+I went through a few iterations for the BookSmart logo. I started the process by brainstorming via mind webs and word associations for the word “textbook.” I then sketched out multiple different textbooks focusing on the idea of two users meeting. I initially wanted to use a logo featuring outlines of two people connected by a textbook. However, I realized that it would be a difficult logo to use in different circumstances. My mentor helped me look beyond my initial designs to see possibilities in tweaking the letters in the name to look like a book. I played around with different designs and colors and finally found the perfect combination for the logo:
+</p>
+<img class="brandingImage" src="images/bslogo.png" alt="logo screenshot">
+        <p>I chose the Lora font for headlines and important text because the serifs give off a more trusted appeal. The second font, Roboto, is for body texts and other smaller headlines. Roboto is a modern looking text and provides a good contrast to the older looking Lora.</p>
+        <div class="typography whole">
+        <img class="half" src="images/bsfonts.png" alt="brand fonts">
+        <img class="half" src="images/bsfonts2.png" alt="brand fonts">
+        </div>
+        <p>I chose colors that are traditionally used for university or academic sites such as blue and green. However, I picked colors that are brighter and give off a more fun and easy vibe. </p>
+        <img class="brandingImage" src="images/bscolor.png" alt="logo screenshot">
+
+
+        <a href="https://www.figma.com/file/9siTCOlQiXyzKnYoDHcvvO/Textbook-Brand-Identity?node-id=1%3A26" target="_blank"> >> See Full Brand Guide Here </a>
+
+        <!-- <button class="Prototype" onclick="window.location.href ='https://www.figma.com/file/NvJx8eSe8CUI6yoq8EffPO/Style-Guide?node-id=0%3A1';"> Brand Guide </button> -->
+    </div>
+    <div class="mockups sectioning">
+      <h3 id="theMockups"> Mockups </h3>
+      <p>I knew that I wanted my website to look clean but also have a fun element to it. I wanted to use icons for the front page in order to briefly explain how everything works. It took me a long time to find appropriate icons that were also fun and consistent.</p>
+      <div>
+      <img class="brandingImage" src="images/bsmockups.png" alt="trip page screenshot">
+    </div>
+    <p>I looked back at a number of websites like Etsy and eBay to see how they emphasize certain actions. Specifically I debated for a long time on where to place the “sell” button. I questioned whether I wanted it to be an option on the main page or whether it should only be available after the school page. I played around with using a colored button to call attention to “sell” but ultimately decided against. If users wanted to sell a book they would look for the button to sell, therefore it doesn’t need to be a colored button that would be one of the first things a user sees. </p>
+    <img class="brandingImage" src="images/sellbutton.png" alt="trip page screenshot">
+    <p>For the search results page, I made a straightforward design that lists out all of the results. Each listing shows a textbook image, the textbook title, the class it is for, and the price.
+In the page to list an item, I created a form like layout where users can go down the page and fill out the necessary information. There is a short description for each section to explain the significance of providing that specific information. The details of the book include: authors, title, course name, course number, condition, subject, educational level, price, and photos. There is also a section for providing additional information. A big part of the BookSmart is that you can meet your buyer/seller directly in person and so I included a section for listing the locations that the seller is willing to meet up at. I had trouble here with how users can enter that information. I considered pill buttons, checkboxes, or just giving them one location option. In the end, I decided on giving them one general location and prompted users to communicate directly in order to pick out a specific location.
+The last page is the listing page for a specific textbook. This page shows all of the information that the seller gave. There is also a section for a question and answer. The purchase button is the biggest button so that it draws the attention of the user. There is a warning that is displayed under the buy button which informs users how much competition they may have in wanting to buy the textbook. The point of the warning is to help push the students along in buying the textbooks they need instead of having the textbook sitting idly in their cart. Underneath the textbook listing are a row of three books that are recommended to the buyer based upon what other users had looked at. </p>
+<img class="brandingImage" src="images/ProductListing.png" alt="trip page screenshot">
+      <a href="https://www.figma.com/file/dgN2jz71NONklwFJdapqKJ/Textbook-Mockups?node-id=0%3A1" target="_blank"> >> See Mockups here </a>
+
+    </div>
+    <div class="preferenceTesting sectioning">
+      <h3 id="thePreferenceTesting"> Usability Testing</h3>
+        <p>I made a prototype using Invision and tested three participants. I asked them to show me: 1. How to get to the page for their school, 2. How to search for a specific textbook they need, and 3. How to list a textbook for sale. The first two users accomplished task number one with no hiccups. The third user, however, got briefly distracted by the icons and thought they were buttons. All three users were able to accomplish the second task easily without any help. For the third task, two users suggested putting the book details above uploading photos because details were more important. User one expressed that the website looked somewhat plain whilst user two really liked the clean aesthetic and claimed it looked more “reputable.”</p>
+        <img class="mockupImage half" src="images/photobefore.png" alt="search before screenshot">
+        <img class="mockupImage half" src="images/photoafter.png" alt="search after screenshot">
+        <p>I changed the search bar so that it doesn’t stand out and distract as much as the original one on the left. If users want to search for an item, they will easily locate the search bar, but the search bar shouldn’t distract so much. </p>
+        <img class="mockupImage half" src="images/searchbefore.png" alt="search before screenshot">
+        <img class="mockupImage half" src="images/searchafter.png" alt="search after screenshot">
+        <p> As shown above I also made the school logo smaller so that it doesn’t draw attention away from my site logo. I also added a line between the two logos for a more finished look.</p>
+</div>
+    <!-- </div>
+    <div class="prototyping sectioning ">
+      <h3 id="thePrototyping"> Prototyping</h3>
+        <p>I tested the finished prototype with three different users. Each user was able to navigate through the pages to complete the high importance tasks with relative ease. Interesting note: most users in this round along with all user in the first usability testing chose to sign up through Facebook to avoid having to enter all of their information. Users expressed confusion when they saw the plus button on the mobile. One user in particular expressed that they would not know what the plus button was for from page to page. I fixed this issue by changing the plus button on the calendar page to a “new” button much like in the web version.</p>
+        <img class="mockupImage half" src="images/Circleadd.png" alt="Circle add button screenshot">
+        <img class="mockupImage half" src="images/Squareadd.png" alt="Square add button screenshot">
+        <p>On the mobile version, it wasn’t particularly clear that users are to click on the travel page title (in this case “Tokyo, Japan”) to return to the travel page. All users were able to accomplish this task of returning to the travel page but only after thinking about it for a bit. In order to improve upon this, I added a back arrow.</p>
+        <div class="whole">
+        <img class="mockupImage third" src="images/noback.png" alt="no back button screenshot">
+        <img class="mockupImage third" src="images/backbutton.png" alt="page with backbutton screenshot">
+        <img class="mockupImage third" src="images/Homepagemob.png" alt="travel page screenshot">
+        </div>
+        <!-- <button class="Prototype" onclick="window.location.href ='#';"> SEE PROTOTYPE </button> -->
+        <!-- <a href='https://www.figma.com/proto/AONfxXI8saCEK4y401A1Su/High-Fidelity-Mockups?node-id=30%3A759&viewport=-487%2C318%2C0.08429098129272461&scaling=min-zoom'> >> See Prototype </a>
+      </div> -->
+    <div class="conclusion sectioning">
+      <h3 id="theConclusion"> Conclusion</h3>
+
+
+        <p>I found that I had a relatively smooth time translating my wireframes into mockups because of the thought and detail I put into making my wireframes. This goes to show how important each step of the design process is and how each step builds on top of the previous one. I learned how important it is to have feedback every step of the way instead of losing myself in my own preferences and ideas. My mentor gave me valuable feedback that helped me see outside what I had already made so that I can move forward with fresh eyes. I think that is important because it helps me see what I might have overlooked or think of different ways to solve as problem instead of fixating on one way of thinking.
+</p>
+    </div>
+
+    <footer class="footer">
+    <div class="topft">
+      <h4>Say Hello!</h4>
+    </div>
+     <ul class="socials">
+       <li>
+         <a href="https://www.linkedin.com/in/ashleychao/" target="_blank">
+           <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+         </a>
+       </li>
+       <li>
+         <a href="https://github.com/ashchao" target="_blank">
+          <i class="fa fa-github fa-2x" aria-hidde="true"></i>
+         </a>
+       </li>
+       <li>
+         <a href="contact.html" target="_blank">
+           <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+         </a>
+       </li>
+
+      </ul>
+    <div class="line">
+      <hr>
+    </div>
+    <div class="small"> © 2019 Designed and Coded by Ashley Chao </div>
+    </footer>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155982188-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-155982188-1');
+</script>
+  </body>
+</html>
