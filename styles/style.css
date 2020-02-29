@@ -601,7 +601,8 @@ padding: 0.3em;
       align-items: center;
   }
   .project {
-    width: 30%;
+    width: 35%;
+
   }
   .allProjects {
     flex-direction: row;
